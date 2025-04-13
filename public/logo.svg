@@ -1,0 +1,31 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#191919"/>
+  
+  <!-- Chain Links - Gradient Background -->
+  <defs>
+    <linearGradient id="chainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- First Chain Link -->
+  <g>
+    <circle cx="82" cy="80" r="20" fill="none" stroke="url(#chainGradient)" stroke-width="8"/>
+    <path d="M65 95 L65 125 A20 20 0 0 0 105 125 L105 95" stroke="url(#chainGradient)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Second Chain Link (Connected) -->
+  <g>
+    <circle cx="125" cy="140" r="20" fill="none" stroke="url(#chainGradient)" stroke-width="8"/>
+    <path d="M108 125 L108 95 A20 20 0 0 1 148 95 L148 125" stroke="url(#chainGradient)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Speech Bubble Overlay -->
+  <path d="M110 75 Q125 60 140 70 Q155 85 145 100 Q135 110 120 105 L115 115 L110 105 Q95 105 90 90 Q85 75 110 75" fill="white" opacity="0.15"/>
+  
+  <!-- A stylized "C" in the center -->
+  <path d="M103 60 A45 45 0 1 0 103 140" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M103 75 A30 30 0 1 0 103 125" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>
