@@ -110,6 +110,26 @@ NEXT_CLERK_WEBHOOK_SECRET=
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 ```
 
+## 🚀 Deploying to Vercel
+
+To deploy ChatterChain to Vercel without localhost redirection issues:
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Configure the following environment variables in Vercel:
+   - MONGODB_URL
+   - CLERK_SECRET_KEY
+   - UPLOADTHING_SECRET
+   - UPLOADTHING_APP_ID
+   - NEXT_CLERK_WEBHOOK_SECRET
+   - NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+   - NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   - NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   - NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+   - NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+4. Set the output directory to `.next`
+5. Deploy and enjoy your live site: [https://chatter-chain-gilt.vercel.app/](https://chatter-chain-gilt.vercel.app/)
+
 ## 💫 Experience the Future of Social Media
 
 ChatterChain combines the best aspects of modern social platforms with innovative features to create a unique, engaging experience. Whether you're looking to connect with friends, join communities, or share your thoughts with the world, ChatterChain offers a secure, performant, and feature-rich platform.
