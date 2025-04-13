@@ -1,0 +1,7 @@
+Fix Vercel deployment redirection issues
+
+- Removed unsupported trustedHosts property from middleware
+- Added .env.production with correct Clerk URL settings
+- Added helper function to handle URL resolution in production
+- Updated README with detailed Vercel deployment instructions
+- Added Clerk dashboard configuration notes 

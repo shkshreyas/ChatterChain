@@ -117,18 +117,23 @@ To deploy ChatterChain to Vercel without localhost redirection issues:
 1. Push your code to GitHub
 2. Connect your repository to Vercel
 3. Configure the following environment variables in Vercel:
-   - MONGODB_URL
-   - CLERK_SECRET_KEY
-   - UPLOADTHING_SECRET
-   - UPLOADTHING_APP_ID
-   - NEXT_CLERK_WEBHOOK_SECRET
-   - NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
-   - NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-   - NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-   - NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
-   - NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+   - `MONGODB_URL` - Your MongoDB connection string
+   - `CLERK_SECRET_KEY` - Your Clerk secret key
+   - `UPLOADTHING_SECRET` - Your UploadThing secret
+   - `UPLOADTHING_APP_ID` - Your UploadThing app ID
+   - `NEXT_CLERK_WEBHOOK_SECRET` - Your Clerk webhook secret
+   - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` - Your Clerk publishable key
+   - `NEXT_PUBLIC_CLERK_SIGN_IN_URL` - Set to `/sign-in`
+   - `NEXT_PUBLIC_CLERK_SIGN_UP_URL` - Set to `/sign-up`
+   - `NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL` - Set to `/onboarding`
+   - `NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL` - Set to `/onboarding`
 4. Set the output directory to `.next`
-5. Deploy and enjoy your live site: [https://chatter-chain-gilt.vercel.app/](https://chatter-chain-gilt.vercel.app/)
+5. Deploy and visit your live site: [https://chatter-chain-gilt.vercel.app/](https://chatter-chain-gilt.vercel.app/)
+
+**Important**: If you encounter localhost redirection issues:
+
+- Ensure your Clerk application domain settings include your Vercel deployment URL
+- In the Clerk dashboard, add your Vercel URL to the list of allowed URLs
 
 ## 💫 Experience the Future of Social Media
 
